@@ -43,3 +43,5 @@ This will print every found domain wiht that word match to the standard output. 
 >> python3 checkfile.py test.txt |wc -l
   173
 ```
+
+Comments/etc? Ping @sjefersuper on Twitter.
