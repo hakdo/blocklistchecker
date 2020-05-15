@@ -13,7 +13,8 @@ tagback = {
   'attack': ['target', 'phishing attack', 'brute force','password spray','attack'],
   'socialengineering': ['phish', 'malicious email', 'maldoc','smishing','vishing','bce','business email compromise','social engineering'],
   'atp': ['atp','fancy bear'],
-  'appsec': ['appsec','cross site scriptin','cross-site scripting','application security','web security','websec','owasp','xss','clickjacking','sqli','csrf','xsrf','security headers','secheaders','csp','content security policy'] 
+  'appsec': ['appsec','cross site scriptin','cross-site scripting','application security','web security','websec','owasp','xss','clickjacking','sqli','csrf','xsrf','security headers','secheaders','csp','content security policy'] ,
+  'privacy': ['gdpr','ccpa','privacy','databreach','ico','dpo','general data protection regulation','personal data', 'pii','data protection officer']
 }
 
 normalizers = {
@@ -30,7 +31,11 @@ normalizers = {
   'sqlinjection': 'sqli',
   'cross-sitescripting': 'xss',
   'target': 'attack',
-  'crosssitescripting': 'xss'
+  'crosssitescripting': 'xss',
+  'generaldataprotectionregulation': 'gdpr',
+  'personaldata': 'privacy',
+  'pii': 'privacy',
+  'dataprotectionofficer': 'dpo'
 }
 
 import re
