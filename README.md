@@ -1,5 +1,5 @@
 # blocklist checkers
-This is a simple collection of Python scripts to fetch and check links and words against spam and malware blocklists. 
+This is a simple collection of Python scripts to fetch and check links and words against spam and malware blocklists. It also contains a text tagger for cybersecurity texts.
 
 ## Phishtank API key
 You will need a phishtank API key to use the `fetchbadness.py` script as-is. 
@@ -42,6 +42,14 @@ This will print every found domain wiht that word match to the standard output. 
 ```bash  
 >> python3 checkfile.py test.txt |wc -l
   173
+```
+
+## Tagging
+You can use the `tag.py`script to tag infosec texts. Faster and sometimes more accurate than machine learning :). No external dependencies.
+
+```python
+import tag
+mytags = tag.tagit(text)
 ```
 
 Comments/etc? Ping @sjefersuper on Twitter.
